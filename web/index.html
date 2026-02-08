@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Платформа диаспоры</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-content">
+        <div class="brand">
+          <span class="logo">D</span>
+          <div>
+            <p class="brand-title">Diaspora Hub</p>
+            <p class="brand-subtitle">Платформа для объединения и поддержки</p>
+          </div>
+        </div>
+        <nav class="site-nav">
+          <a href="#features">Функции</a>
+          <a href="#payments">Взносы</a>
+          <a href="#cabinet">Личный кабинет</a>
+          <a href="#admin">Админка</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+        <button class="primary-button">Войти</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="badge">Техническое задание → готовый прототип</p>
+            <h1>Управляйте деятельностью диаспоры в едином цифровом пространстве</h1>
+            <p class="hero-text">
+              Платформа объединяет регистрацию участников, сбор ежемесячных взносов,
+              отчётность, коммуникации и новости. Готова к масштабированию и интеграции
+              с платежными шлюзами.
+            </p>
+            <div class="hero-actions">
+              <button class="primary-button">Создать аккаунт</button>
+              <button class="ghost-button">Смотреть демо</button>
+            </div>
+            <div class="hero-stats">
+              <div>
+                <p class="stat-number">3</p>
+                <p class="stat-label">Роли пользователей</p>
+              </div>
+              <div>
+                <p class="stat-number">4</p>
+                <p class="stat-label">Ключевых модуля</p>
+              </div>
+              <div>
+                <p class="stat-number">24/7</p>
+                <p class="stat-label">Доступ к сервису</p>
+              </div>
+            </div>
+          </div>
+          <div class="hero-card">
+            <h2>Быстрый старт</h2>
+            <p>Заполните форму и получите доступ к личному кабинету участника.</p>
+            <form class="card-form">
+              <label>
+                Имя и фамилия
+                <input type="text" placeholder="Например, Алия Сарсенова" />
+              </label>
+              <label>
+                Email
+                <input type="email" placeholder="name@mail.com" />
+              </label>
+              <label>
+                Страна проживания
+                <input type="text" placeholder="Казахстан" />
+              </label>
+              <button type="button" class="primary-button">Зарегистрироваться</button>
+              <p class="helper-text">Уже есть доступ? <a href="#cabinet">Войти в кабинет</a></p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Основные функции</h2>
+            <p>
+              Разделы платформы отражают ТЗ: личный кабинет участника, мониторинг
+              взносов, управление пользователями и контентом.
+            </p>
+          </div>
+          <div class="feature-grid">
+            <article>
+              <h3>Регистрация и профиль</h3>
+              <p>Единый поток регистрации, обновление персональных данных и статус членства.</p>
+              <ul>
+                <li>Подтверждение email/SMS</li>
+                <li>Хранение контактных данных</li>
+                <li>История активности</li>
+              </ul>
+            </article>
+            <article>
+              <h3>Взносы и платежи</h3>
+              <p>Онлайн-оплата, рекуррентные списания и ручное подтверждение платежей.</p>
+              <ul>
+                <li>Квитанции в один клик</li>
+                <li>Статус платежей</li>
+                <li>Интеграция с шлюзами</li>
+              </ul>
+            </article>
+            <article>
+              <h3>Отчетность и экспорт</h3>
+              <p>Формирование отчетов для руководства и выгрузка в Excel/CSV.</p>
+              <ul>
+                <li>Фильтры по периодам</li>
+                <li>Динамика взносов</li>
+                <li>Планируемые платежи</li>
+              </ul>
+            </article>
+            <article>
+              <h3>Контент и новости</h3>
+              <p>Публикации, объявления и уведомления для участников.</p>
+              <ul>
+                <li>Гибкий редактор новостей</li>
+                <li>Планирование рассылок</li>
+                <li>Шаблоны уведомлений</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="payments" class="section accent">
+        <div class="container split">
+          <div>
+            <h2>Платежная система</h2>
+            <p>
+              Гибкий модуль взносов поддерживает онлайн-оплату, ручную модерацию и
+              рекуррентные списания. Участники получают уведомления о статусе оплаты.
+            </p>
+            <div class="pill-grid">
+              <span>Оплата картой</span>
+              <span>Рекуррентные платежи</span>
+              <span>Ручное подтверждение</span>
+              <span>Генерация квитанций</span>
+            </div>
+          </div>
+          <div class="payment-card">
+            <h3>Тарифы</h3>
+            <div class="tariff">
+              <div>
+                <p class="tariff-name">Базовый взнос</p>
+                <p class="tariff-price">₸ 5 000 / месяц</p>
+              </div>
+              <button class="ghost-button">Оплатить</button>
+            </div>
+            <div class="tariff">
+              <div>
+                <p class="tariff-name">Семейный взнос</p>
+                <p class="tariff-price">₸ 8 500 / месяц</p>
+              </div>
+              <button class="ghost-button">Оплатить</button>
+            </div>
+            <div class="tariff">
+              <div>
+                <p class="tariff-name">Поддержка проекта</p>
+                <p class="tariff-price">₸ 15 000 / месяц</p>
+              </div>
+              <button class="ghost-button">Оплатить</button>
+            </div>
+            <p class="helper-text">Настройка тарифов доступна в админ-панели.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="cabinet" class="section">
+        <div class="container split">
+          <div>
+            <h2>Личный кабинет участника</h2>
+            <p>
+              Участники видят статус членства, историю платежей и получают уведомления
+              о необходимости оплаты.
+            </p>
+            <div class="status-card">
+              <div>
+                <p class="status-label">Статус членства</p>
+                <p class="status-value active">Активен до 30.04.2025</p>
+              </div>
+              <div>
+                <p class="status-label">Последний платеж</p>
+                <p class="status-value">₸ 5 000 · 05.03.2025</p>
+              </div>
+              <div>
+                <p class="status-label">Следующий взнос</p>
+                <p class="status-value">₸ 5 000 · 05.04.2025</p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline">
+            <h3>История платежей</h3>
+            <ul>
+              <li>
+                <span class="dot"></span>
+                <div>
+                  <p>05.03.2025 · ₸ 5 000</p>
+                  <span>Оплачено онлайн</span>
+                </div>
+              </li>
+              <li>
+                <span class="dot"></span>
+                <div>
+                  <p>05.02.2025 · ₸ 5 000</p>
+                  <span>Оплачено онлайн</span>
+                </div>
+              </li>
+              <li>
+                <span class="dot"></span>
+                <div>
+                  <p>05.01.2025 · ₸ 5 000</p>
+                  <span>Подтверждено администратором</span>
+                </div>
+              </li>
+            </ul>
+            <button class="ghost-button">Скачать квитанции</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="admin" class="section accent">
+        <div class="container">
+          <div class="section-head">
+            <h2>Административная панель</h2>
+            <p>
+              Управляйте участниками, подтверждайте платежи и формируйте отчеты для
+              руководства диаспоры.
+            </p>
+          </div>
+          <div class="admin-grid">
+            <div class="admin-card">
+              <h3>Участники</h3>
+              <p class="muted">1 248 активных</p>
+              <ul>
+                <li>Создание и блокировка профилей</li>
+                <li>Выгрузка контактов</li>
+                <li>История платежей</li>
+              </ul>
+            </div>
+            <div class="admin-card">
+              <h3>Платежи</h3>
+              <p class="muted">97% подтверждено</p>
+              <ul>
+                <li>Ручная модерация</li>
+                <li>Детализация по периодам</li>
+                <li>Экспорт в CSV</li>
+              </ul>
+            </div>
+            <div class="admin-card">
+              <h3>Контент</h3>
+              <p class="muted">5 опубликованных новостей</p>
+              <ul>
+                <li>Уведомления email/SMS</li>
+                <li>Планирование публикаций</li>
+                <li>Редактор объявлений</li>
+              </ul>
+            </div>
+            <div class="admin-card">
+              <h3>Отчеты</h3>
+              <p class="muted">Последний отчет: март</p>
+              <ul>
+                <li>Графики и аналитика</li>
+                <li>Шаблоны Excel</li>
+                <li>Сводки по регионам</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacts" class="section">
+        <div class="container split">
+          <div>
+            <h2>Связь и поддержка</h2>
+            <p>
+              Каналы для связи с диаспорой и операторами платформы. Все обращения
+              фиксируются в журнале действий.
+            </p>
+            <div class="contact-list">
+              <div>
+                <p class="contact-label">Email</p>
+                <p>support@diaspora-hub.example</p>
+              </div>
+              <div>
+                <p class="contact-label">Телефон</p>
+                <p>+7 (777) 000-00-00</p>
+              </div>
+              <div>
+                <p class="contact-label">Адрес офиса</p>
+                <p>г. Алматы, ул. Абая, 10</p>
+              </div>
+            </div>
+          </div>
+          <form class="support-form">
+            <h3>Оставить запрос</h3>
+            <label>
+              Тема
+              <input type="text" placeholder="Вопрос по оплате" />
+            </label>
+            <label>
+              Сообщение
+              <textarea rows="4" placeholder="Опишите вашу ситуацию"></textarea>
+            </label>
+            <button type="button" class="primary-button">Отправить</button>
+            <p class="helper-text">Ответим в течение 24 часов.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div>
+          <p class="brand-title">Diaspora Hub</p>
+          <p class="muted">Платформа управления диаспорой и ежемесячными взносами.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Пользовательское соглашение</a>
+          <a href="#">Статус системы</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
