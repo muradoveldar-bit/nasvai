@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diaspora Hub — Карточка участника</title>
+    <link rel="stylesheet" href="../../assets/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="../index.html">
+          <span>DH</span>
+          Diaspora Hub
+        </a>
+        <nav class="nav-links">
+          <a href="members.html">Участники</a>
+          <a href="payments.html">Платежи</a>
+          <a href="reports.html">Отчеты</a>
+          <a href="settings.html">Настройки</a>
+          <a href="login.html">Выйти</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container split">
+        <div class="card">
+          <h1>Карточка участника</h1>
+          <p><strong>ФИО:</strong> Алиев Самир Рамил оглы</p>
+          <p><strong>Телефон:</strong> +7 (777) 122-00-11</p>
+          <p><strong>Email:</strong> s.aliev@example.com</p>
+          <p><strong>Статус:</strong> <span class="badge paid">Active</span></p>
+          <p class="meta">Участник с: 2022-05-18</p>
+        </div>
+        <div class="card">
+          <h2>Действия администратора</h2>
+          <div class="form">
+            <div>
+              <label for="status">Изменить статус</label>
+              <select id="status">
+                <option>Active</option>
+                <option>Overdue</option>
+                <option>Suspended</option>
+              </select>
+            </div>
+            <div>
+              <label for="notes">Заметки</label>
+              <textarea id="notes">Попросить предоставить чек за август.</textarea>
+            </div>
+            <button class="button" type="button">Сохранить</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" style="margin-top: 32px;">
+        <h2>История платежей</h2>
+        <table class="table" style="margin-top: 16px;">
+          <thead>
+            <tr>
+              <th>Период</th>
+              <th>Сумма</th>
+              <th>Статус</th>
+              <th>Чек</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2024-09</td>
+              <td>2000₸</td>
+              <td><span class="badge confirmed">Confirmed</span></td>
+              <td>Файл загружен</td>
+            </tr>
+            <tr>
+              <td>2024-08</td>
+              <td>2000₸</td>
+              <td><span class="badge pending">Pending</span></td>
+              <td>Ожидается</td>
+            </tr>
+            <tr>
+              <td>2024-07</td>
+              <td>2000₸</td>
+              <td><span class="badge rejected">Rejected</span></td>
+              <td>Отсутствует</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h4>Diaspora Hub</h4>
+          <p class="meta">Сервис для оплаты членских взносов диаспоры.</p>
+        </div>
+        <div>
+          <h4>Контакты</h4>
+          <p>Телефон: +7 (777) 123-45-67</p>
+          <p>Email: info@diaspora.kz</p>
+        </div>
+        <div>
+          <h4>Документы</h4>
+          <a href="../rules.html">Правила членства</a><br />
+          <a href="../contacts.html">Политика обработки данных</a>
+        </div>
+      </div>
+      <div class="container" style="margin-top: 20px;">
+        <small data-year></small>
+      </div>
+    </footer>
+
+    <script src="../../assets/app.js"></script>
+  </body>
+</html>

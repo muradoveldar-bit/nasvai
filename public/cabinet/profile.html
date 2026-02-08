@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diaspora Hub — Профиль</title>
+    <link rel="stylesheet" href="../../assets/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="../index.html">
+          <span>DH</span>
+          Diaspora Hub
+        </a>
+        <nav class="nav-links">
+          <a href="index.html">Дашборд</a>
+          <a href="payments.html">Платежи</a>
+          <a href="profile.html">Профиль</a>
+          <a href="../auth/login.html">Выйти</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container" style="max-width: 620px;">
+        <div class="card">
+          <h1>Профиль</h1>
+          <p class="meta">Управляйте личными данными участника.</p>
+          <form class="form">
+            <div>
+              <label for="name">ФИО</label>
+              <input id="name" type="text" value="Алиев Самир Рамил оглы" />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" type="email" value="s.aliev@example.com" />
+            </div>
+            <div>
+              <label for="city">Город</label>
+              <input id="city" type="text" value="Алматы" />
+            </div>
+            <button class="button" type="button">Сохранить изменения</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h4>Diaspora Hub</h4>
+          <p class="meta">Сервис для оплаты членских взносов диаспоры.</p>
+        </div>
+        <div>
+          <h4>Контакты</h4>
+          <p>Телефон: +7 (777) 123-45-67</p>
+          <p>Email: info@diaspora.kz</p>
+        </div>
+        <div>
+          <h4>Документы</h4>
+          <a href="../rules.html">Правила членства</a><br />
+          <a href="../contacts.html">Политика обработки данных</a>
+        </div>
+      </div>
+      <div class="container" style="margin-top: 20px;">
+        <small data-year></small>
+      </div>
+    </footer>
+
+    <script src="../../assets/app.js"></script>
+  </body>
+</html>

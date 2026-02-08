@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diaspora Hub — Настройки</title>
+    <link rel="stylesheet" href="../../assets/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="../index.html">
+          <span>DH</span>
+          Diaspora Hub
+        </a>
+        <nav class="nav-links">
+          <a href="members.html">Участники</a>
+          <a href="payments.html">Платежи</a>
+          <a href="reports.html">Отчеты</a>
+          <a href="settings.html">Настройки</a>
+          <a href="login.html">Выйти</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container" style="max-width: 680px;">
+        <div class="card">
+          <h1>Настройки оплаты</h1>
+          <p class="meta">Управляйте реквизитами и правилами взноса.</p>
+          <form class="form">
+            <div>
+              <label for="kaspi">Реквизиты Kaspi</label>
+              <input id="kaspi" type="text" value="+7 (777) 888-99-00" />
+            </div>
+            <div>
+              <label for="fee">Размер взноса</label>
+              <input id="fee" type="text" value="2000₸" />
+            </div>
+            <div>
+              <label for="deadline">Дедлайн оплаты</label>
+              <input id="deadline" type="text" value="10 число каждого месяца" />
+            </div>
+            <button class="button" type="button">Сохранить изменения</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h4>Diaspora Hub</h4>
+          <p class="meta">Сервис для оплаты членских взносов диаспоры.</p>
+        </div>
+        <div>
+          <h4>Контакты</h4>
+          <p>Телефон: +7 (777) 123-45-67</p>
+          <p>Email: info@diaspora.kz</p>
+        </div>
+        <div>
+          <h4>Документы</h4>
+          <a href="../rules.html">Правила членства</a><br />
+          <a href="../contacts.html">Политика обработки данных</a>
+        </div>
+      </div>
+      <div class="container" style="margin-top: 20px;">
+        <small data-year></small>
+      </div>
+    </footer>
+
+    <script src="../../assets/app.js"></script>
+  </body>
+</html>
